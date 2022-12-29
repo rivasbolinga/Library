@@ -60,5 +60,6 @@ removeBtn.forEach(element => {
       const idBtn = parseInt(e.target.getAttribute('data-id'));
       delete library[idBtn];
       console.log(library)
+      e.target.parentElement.remove()
     })
   });
