@@ -57,6 +57,7 @@ const newBook = function (e) {
    <p class="book-title">${titleNew}</p>
    <p class="book-author">${authorNew}</p>
    <button class="remove-btn">Remove</button>
+   <button class="read-btn">Not read</button>
  </div>`
  libraryContainer.innerHTML += html;
  localStorage.setItem('local', JSON.stringify(library)); // LOCAL STORAGE
@@ -73,4 +74,12 @@ if(e.target.className=== "remove-btn") {
     localStorage.setItem('local', JSON.stringify(library)); // LOCAL STORAGE
   e.target.parentElement.remove();
 }
+})
+
+document.getElementById('book-list').addEventListener('click', function(e){
+  if(e.target.className ==="read-btn" && e.target.textContent === 'Not read'){
+    e.target.textContent = 'Read'
+  } if (e.target.className === 'read-btn' && e.target.texContent === 'Read'){
+    e.target.textContent = 'Not read'
+  }
 })
