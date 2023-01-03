@@ -31,8 +31,8 @@ const libraryContainer = document.querySelector('.library')
     <button data-id="${i}" class="read-btn">Not read</button>
   </div>`
   libraryContainer.innerHTML += html;
+  
   }
-
 const addBtn = document.querySelector('.btn-add');
 const newAuthor = document.querySelector('.author-book-add');
 const newTitle = document.querySelector('.title-book-add');
@@ -52,14 +52,22 @@ const newBook = function (e) {
  </div>`
  libraryContainer.innerHTML += html;
 }
+
 addBtn.addEventListener('click',newBook)
 
 //remove book
-removeBtn.forEach(element => {
-    element.addEventListener('click',function(e){
-      const idBtn = parseInt(e.target.getAttribute('data-id'));
-      delete library[idBtn];
-      console.log(library)
-      e.target.parentElement.remove()
-    })
-  });
+// removeBtn.forEach(element => {
+//     element.addEventListener('click',function(e){
+//       const idBtn = parseInt(e.target.getAttribute('data-id'));
+//       delete library[idBtn];
+//       console.log(library)
+//       e.target.parentElement.remove()
+//     })
+//   });
+//   }
+
+document.getElementById('book-list').addEventListener('click',function(e){
+if(e.target.className=== "remove-btn") {
+  e.target.parentElement.remove();
+}
+})
