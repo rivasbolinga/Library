@@ -19,6 +19,14 @@ const Book = function (title,author) {
 Book.prototype.readornot = function(){
 
 }
+//Local storage
+
+const bookValue = JSON.parse(localStorage.getItem('library'));
+if (bookValue === 0 || bookValue === null) {
+  localStorage.setItem('local', JSON.stringify(library));
+} else {
+  library = bookValue;
+}
 
 // display books
 const libraryContainer = document.querySelector('.library')
@@ -51,23 +59,18 @@ const newBook = function (e) {
    <button class="remove-btn">Remove</button>
  </div>`
  libraryContainer.innerHTML += html;
+ localStorage.setItem('local', JSON.stringify(library)); // LOCAL STORAGE
 }
 
 addBtn.addEventListener('click',newBook)
 
-//remove book
-// removeBtn.forEach(element => {
-//     element.addEventListener('click',function(e){
-//       const idBtn = parseInt(e.target.getAttribute('data-id'));
-//       delete library[idBtn];
-//       console.log(library)
-//       e.target.parentElement.remove()
-//     })
-//   });
-//   }
+
 
 document.getElementById('book-list').addEventListener('click',function(e){
 if(e.target.className=== "remove-btn") {
+  const { id } = e.target;
+    library = library.filter((bk) => JSON.stringify(bk.id) !== id);
+    localStorage.setItem('local', JSON.stringify(library)); // LOCAL STORAGE
   e.target.parentElement.remove();
 }
 })
