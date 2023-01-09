@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Library</title>
+  <title>Awesome Library</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@700;900&family=Rubik+Bubbles&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Indie+Flower&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Baskerville:wght@400;700&family=Roboto:wght@700;900&family=Rubik+Bubbles&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1> AWESOME BOOKS</h1>
-  <div class="library" id="book-list">
-  <div class="book-card">
-    <p class="book-title"></p>
-    <p class="book-author"></p>
-  </div>
-  <form class="add-book-form">
+<div class="container">
+  <div class="form-container">
+    <div class="add-book-text">Add a book to your favorite library!</div>
+  <div class="form-wrapper">
+   <form class="add-book-form">
     <div class="title-book-form">
       <input
       type="text"
-      placeholder="Title"
+      placeholder="What is the title?"
       class="title-book-add"
       >
     </div>
@@ -27,10 +27,35 @@
       <input
       class="author-book-add"
       type="text"
-      placeholder="Author">
+      placeholder="Who is the author?">
     </div>
-    <button class="btn-add">Add</button>
+    <div class="pages-book-form">
+      <input
+      class="pages-book-add"
+      type="text"
+      placeholder="How many pages has?">
+    </div>
+    <button class="btn-add">ADD NEW BOOK</button>
   </form>
+</div>
+</div>
+  <div class="library-container">
+  <h1 class="library-title">YOUR AWESOME LIBRARY </h1>
+  
+  <div class="book-information-container">
+    <div class="book-information">TITLE</div>
+    <div class="book-information">AUTHOR</div>
+    <div class="book-information">READ?</div>
+    <div class="book-information">STATUS</div>
+  </div>
+  <div class="library" id="book-list">
+  <div class="book-card">
+    <p class="book-title"></p>
+    <p class="book-author"></p>
+  </div>
+</div>
+  
+</div>
 </div>
  <script src="main.js"></script> 
 </body>

@@ -3,17 +3,20 @@
 let library = [
   {
     title: 'The fine balance',
-    author: 'Rohinton Mistry'
+    author: 'Rohinton Mistry',
+    pages: 600
   },
   {
     title: 'The alchemist',
-    author: 'Paulo Coelho'
+    author: 'Paulo Coelho',
+    pages: 192
   }
 ];
 
-const Book = function (title,author) {
+const Book = function (title,author,pages) {
   this.title = title
   this.author = author
+  this.pages = pages
 }
 
 Book.prototype.readornot = function(){
@@ -35,8 +38,10 @@ const libraryContainer = document.querySelector('.library')
     const html = ` <div class="book-card">
     <p class="book-title">${library[i].title}</p>
     <p class="book-author">${library[i].author}</p>
-    <button data-id="${i}" class="remove-btn">Remove</button>
-    <button data-id="${i}" class="read-btn">Not read</button>
+    <p class="book-pages">${library[i].pages}</p>
+    <button data-id="${i}" class="read-btn">Not yet</button>
+    <button data-id="${i}"class="remove-btn">Remove</button>
+    
   </div>`
   libraryContainer.innerHTML += html;
   
