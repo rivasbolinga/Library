@@ -40,10 +40,12 @@ body {
 }
 
 .form-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.635);
   border: 2px solid rgba(152, 86, 15, 0.428);
   width: 255px;
-  height: 300px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,21 +97,65 @@ body {
 }
 
 .book-information {
-  padding: 10px 60px 10px 60px;
+  width: 250px;
+  font-size: 15px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.library {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(250, 235, 215, 0.97);
+  border: 2px solid brown;
+}
+
+
+.book-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.book-wrapper:nth-child(odd){
+  background-color: rgba(255, 255, 255, 0.909)
+}
+
+.checkbox-label {
+  font-family: 'Libre Baskerville', serif;
   font-size: 15px;
 }
 
-.book-card {
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  border: 1px solid brown;
+.checkbox-wrapper {
+  margin-top: 20px;
 }
 
-.book-title {
-  width: 220px;
-  background-color: antiquewhite;
+.checkbox-input {
+  background-color: #c79081;
 }
-.book-author {
-  width: 200px;
+
+#info-book {
+  width: 280px;
+  padding-left: 20px;
+}
+
+.read {
+  background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
+  color: white;
+  border-radius: 5px;
+  border: 2px solid rgb(13, 6, 6);
+  padding: 10px;
+  width: 50px;
+}
+
+#pages  {
+  width: 170px;
+}
+
+.remove-btn {
+  border: none;
+  background: none;
+  color: rgb(163, 7, 7);
 }

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<link>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome Library</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@700;900&family=Rubik+Bubbles&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Indie+Flower&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Baskerville:wght@400;700&family=Roboto:wght@700;900&family=Rubik+Bubbles&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/713945395b.js" crossorigin="anonymous"></script>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Indie+Flower&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Baskerville:wght@400;700&family=Roboto:wght@700;900&family=Rubik+Bubbles&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+ 
 </head>
 <body>
 <div class="container">
@@ -22,7 +24,6 @@
       class="title-book-add"
       >
     </div>
-
     <div class="author-book-form">
       <input
       class="author-book-add"
@@ -31,10 +32,18 @@
     </div>
     <div class="pages-book-form">
       <input
-      class="pages-book-add"
       type="text"
-      placeholder="How many pages has?">
+      placeholder="How many pages has?"
+      class="pages-book-add">
     </div>
+    <div class="checkbox-wrapper">
+      <input 
+      class="checkbox-input"
+      type="checkbox"
+      name="checkbox">
+      <label class="checkbox-label" for="checkbox">Have you read it?</label>
+    </div>
+    
     <button class="btn-add">ADD NEW BOOK</button>
   </form>
 </div>
@@ -45,14 +54,12 @@
   <div class="book-information-container">
     <div class="book-information">TITLE</div>
     <div class="book-information">AUTHOR</div>
-    <div class="book-information">READ?</div>
-    <div class="book-information">STATUS</div>
+    <div id="pages" class="book-information">PAGES</div>
+    <div id="pages" class="book-information">READ?
+    </div>
+    
   </div>
   <div class="library" id="book-list">
-  <div class="book-card">
-    <p class="book-title"></p>
-    <p class="book-author"></p>
-  </div>
 </div>
   
 </div>
