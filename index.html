@@ -12,8 +12,12 @@
  
 </head>
 <body>
+<section>
+
+
 <div class="container">
   <div class="form-container">
+    <button class="close-modal">x</button>
     <div class="add-book-text">Add a book to your favorite library!</div>
   <div class="form-wrapper">
    <form class="add-book-form">
@@ -47,15 +51,23 @@
     <button class="btn-add">ADD NEW BOOK</button>
   </form>
 </div>
+<div class="success-message">Book added successfully</div>
+<div class="error-message">All the fields are requiered</div>
 </div>
-  <div class="library-container">
-  <h1 class="library-title">YOUR AWESOME LIBRARY </h1>
-  
-  <div class="book-information-container">
+  <div class="main-container">
+    <button class="add-book-mobile">
+      <i class="fa-solid fa-book fa-xl"></i>
+      Add your book!
+    </button>
+   <h1 class="library-title">YOUR AWESOME LIBRARY </h1>
+   <div class="library-container">
+   <div class="book-information-container">
     <div class="book-information">TITLE</div>
     <div class="book-information">AUTHOR</div>
     <div id="pages" class="book-information">PAGES</div>
-    <div id="pages" class="book-information">READ?
+    <div id="read" class="book-information">READ?
+    </div>
+    <div class="delete-info"><i class="fa-regular fa-trash-can fa-lg"></i>
     </div>
     
   </div>
@@ -64,6 +76,13 @@
   
 </div>
 </div>
+</div>
+</section>
+<footer>
+  <p>Copyright &#169; 2023 rivasbolinga
+    <i class="fa-brands fa-github"></i>
+  </p>
+</footer>
  <script src="main.js"></script> 
 </body>
 </html>

@@ -5,13 +5,21 @@ body {
   background-image:
   url('alfons-morales-YLSwjSy7stw-unsplash.jpg');
   background-repeat: no-repeat;
-
+  /* overflow-x: hidden; */
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 .container {
   display: flex;
   flex-direction: row;
-  height: 1000px;
+  height: 800px;
+}
+
+.close-modal {
+  display: none;
 }
 
 .form-container {
@@ -22,6 +30,7 @@ body {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  
 }
 
 .add-book-text {
@@ -38,14 +47,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.add-book-mobile {
+  display: none;
+}
 .form-wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.635);
   border: 2px solid rgba(152, 86, 15, 0.428);
   width: 255px;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,9 +101,9 @@ body {
   color: rgba(255, 255, 255, 0.789);
   font-size: 35px;
   font-family: 'Libre Baskerville', serif;
-  padding: 20px;
-  width: 800px;
   margin: 0;
+  padding: 50px;
+  width: 100%;
 }
 
 .book-information {
@@ -117,6 +127,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 10px 20px 10px 10px;
 }
 
 .book-wrapper:nth-child(odd){
@@ -151,11 +162,202 @@ body {
 }
 
 #pages  {
-  width: 170px;
+
+  width: 200px;
 }
 
 .remove-btn {
+  font-size: 20px;
   border: none;
   background: none;
   color: rgb(163, 7, 7);
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+#readornot {
+  width: 150px
+}
+
+#read{
+  width: 50px;
+}
+
+footer {
+  width: 98%;
+  background-color: rgb(25, 52, 75);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 42px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.delete-info {
+  width: 100px;
+  padding-top: 12px;
+  color: rgb(111, 3, 3);;
+}
+
+.error-message {
+  display: none;
+  background-color: rgba(180, 78, 78, 0.883);
+  padding: 10px;
+  color: white;
+  border-radius: 1px;
+  transform: translateX(50% 50%);
+}
+
+.success-message {
+  display: none;
+  background-color: rgba(83, 78, 180, 0.883);
+  padding: 10px;
+  color: white;
+  border-radius: 1px;
+  transform: translateX(50% 50%);
+}
+
+
+@media only screen and (max-width: 425px){
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.form-container {
+  display: none;
+}
+
+.library-title {
+  width: 280px;
+  font-size: 20px;
+  padding: 40px 20px 40px 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.book-information-container {
+  gap: 0;
+  width: 318px;
+}
+.book-information {
+  width: 100px;
+  font-size: 10px;
+  height: 50px;
+}
+
+#info-book {
+  width: 100px;
+  padding-left: 20px;
+  font-size: 12px;
+  padding: 0;
+}
+
+
+.read {
+  padding: 6px;
+  width: 26px;
+  font-size: 10px;
+}
+
+.not-read {
+  font-size: 12px;
+  width: 30px;
+}
+.library {
+  width: 315px;
+}
+.delete-info {
+  width: 50px;
+}
+#readornot {
+  width: 50px;
+}
+#read {
+  width: 80px;
+}
+
+footer {
+
+  padding: 30px 10px 30px 10px;
+}
+.remove-btn {
+
+  padding-left: 15px;
+}
+
+.add-book-mobile {
+  display: block;
+  position: fixed;
+  top: 2px;
+  left: 2px;
+  width: 50px;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  color: #da9663;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 12px;
+}
+#pages {
+  display: none;
+}
+.book-pages {
+  display: none;
+}
+.close-modal {
+  display: flex;
+  color: #3b2a26;
+  font-size: 20px;
+  background: none;
+  border:1px solid #da9663;
+  padding: 5px 10px 5px 10px;
+  border-radius: 2px;
+}
+
+@media only screen and (min-width:375px) {
+  #pages {
+    display: flex;
+    width: 70px;
+  }
+  .book-pages {
+    display: flex;
+    width: 80px;
+    font-size: 12px;
+  
+  }
+  .library {
+    width:370px;
+  }
+  .book-information-container {
+    width: 372px;
+
+  }
+  .library-title {
+    width: 345px;
+    padding-top: 60px;
+  }
+  #readornot {
+    width: 50px;
+  }
+
+  .book-pages{
+    width: 70px;
+    padding-left: 10px;
+  }
+  #info-book {
+    width: 110px;
+  }
+  .book-information {
+    width: 115px;
+  }
+
+
+ 
+}
 }
