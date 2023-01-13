@@ -105,11 +105,11 @@ class UI {
 
   static successMsg() {
     successMessage.style.display = 'flex';
-    setTimeout(() => successMessage.remove(), 3000);
+    setTimeout(() => successMessage.remove(), 2000);
   }
   static errorMsg() {
     errorMessage.style.display = 'flex';
-    setTimeout(() => errorMessage.remove(), 3000);
+    setTimeout(() => errorMessage.remove(), 2000);
   }
 }
 const addBookPressed = function (e) {

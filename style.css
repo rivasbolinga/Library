@@ -5,7 +5,7 @@ body {
   background-image:
   url('alfons-morales-YLSwjSy7stw-unsplash.jpg');
   background-repeat: no-repeat;
-  /* overflow-x: hidden; */
+  overflow-x: hidden; 
 }
 
 * {
@@ -180,19 +180,10 @@ body {
 }
 
 #read{
-  width: 50px;
+  width: 200px;
 }
 
-footer {
-  width: 98%;
-  background-color: rgb(25, 52, 75);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 42px;
-  font-family: 'Roboto', sans-serif;
-}
+
 
 .delete-info {
   width: 100px;
