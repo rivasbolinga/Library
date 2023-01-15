@@ -1,6 +1,6 @@
 
 
-  <img src="./img/cf929df3b4640fa9e3893c370d8448cf0ffe7fbf.jpg" alt="logo" width="140"  height="auto" />
+  <img src="./img/cf929df3b4640fa9e3893c370d8448cf0ffe7fbf.jpg" alt="logo" width="140"  height="auto"  />
   <br/>
 
 
@@ -10,14 +10,14 @@
 
 **[Library - Book List]** is a small library app where you can record a list of books that you have read or you want to read. 
 
-<img src="./img/mobile-v-library.png" alt="screenshot" width="450"  height="auto">
+<img src="./img/mobile-v-library.png" alt="screenshot" width="650"  height="auto">
 
-<img src="./img/Screenshot 2023-01-15 at 11.50.31.png" width="840"  height="auto">
+<img src="./img/Screenshot 2023-01-15 at 11.50.31.png" width="740"  height="auto">
 
 ## Requierements ##
 
--Project from The Odin Projec's curriculum.
--Requierements:
+-Project from The Odin Projec's curriculum. 
+  <br/>-Main Requierements:
   1. Write a function that loops through the array and displays each book on the page. 
   2. Add a “NEW BOOK” button that brings up a form allowing users to input the details for the new book: author, title, number of pages, whether it’s been read and anything else you might want.
   3. Add a button on each book’s display to remove the book from the library.
