@@ -1,5 +1,5 @@
 
-
+<div align="center">
   <img src="./img/cf929df3b4640fa9e3893c370d8448cf0ffe7fbf.jpg" alt="logo" width="140"  height="auto"  />
   <br/>
 
@@ -9,7 +9,7 @@
 
 
 **[Library - Book List]** is a small library app where you can record a list of books that you have read or you want to read. 
-
+</div>
 <img src="./img/mobile-v-library.png" alt="screenshot" width="650"  height="auto">
 
 <img src="./img/Screenshot 2023-01-15 at 11.50.31.png" width="740"  height="auto">
