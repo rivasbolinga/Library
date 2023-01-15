@@ -153,9 +153,9 @@ const openModalF = function() {
   modal.style.width = "100%";
   modal.style.height = "100%";
   modal.style.backgroundColor = "white"
+  modal.style.left = "0"
   modal.style.padding = "0"
   openModal.style.display = "none"
-  
 }
 
 const closeModalF = function() {

@@ -347,8 +347,66 @@ footer {
   .book-information {
     width: 115px;
   }
-
-
  
 }
+}
+@media only screen and (max-width: 768px){
+  .library-title {
+    width: 500px;
+    font-size: 20px;
+  }
+  .form-container {
+    width: 200px;
+  }
+
+  .add-book-text {
+    font-size: 18px;
+  }
+
+  .book-information-container {
+    width: 570px;
+  }
+
+  .form-wrapper {
+    width: 200px;
+  }
+
+  .library {
+    width: 570px;
+  }
+
+  #pages {
+    width: 100px;
+    font-size: 15px;
+  }
+  .book-pages {
+    display: flex;
+    width: 80px;
+    font-size: 12px;
+  
+  }
+ 
+
+  #readornot {
+    width: 100px;
+  }
+
+  .book-pages{
+    width: 70px;
+    padding-left: 10px;
+  }
+  #info-book {
+    width: 120px;
+  }
+
+  .book-information {
+    width: 170px;
+  }
+
+  #read {
+    width: 130px;
+  }
+  .delete-info {
+    width: 100px;
+  }
 }
