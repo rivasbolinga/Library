@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   background-image: url('./img/alfons-morales-YLSwjSy7stw-unsplash.jpg');
-  background-repeat: no-repeat;
+  background-repeat:repeat-y;
   overflow-x: hidden;
 }
 
@@ -350,7 +350,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 426px) {
+@media only screen and (max-width: 768px) and (min-width: 436px) {
   .library-title {
     width: 500px;
     font-size: 20px;
