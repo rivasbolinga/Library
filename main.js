@@ -1,29 +1,23 @@
-'use script'
+/* eslint-disable max-classes-per-file */
+
+'use script';
 
 const addBtn = document.querySelector('.btn-add');
 const newTitleInput = document.querySelector('.title-book-add');
 const newAuthorInput = document.querySelector('.author-book-add');
 const newPagesInput = document.querySelector('.pages-book-add');
 const libraryContainer = document.querySelector('.library');
-const listLink = document.querySelector('.nav-list');
-const addLink = document.querySelector('.nav-add');
-const contactLink = document.querySelector('.nav-contact');
-const listSection = document.querySelector('.list-section');
-const addSection = document.querySelector('.add-section');
-const contactSection = document.querySelector('.contact-section');
-const dateToday = document.querySelector('.date-display');
 const checkbox = document.querySelector('input[name="checkbox"]');
 const successMessage = document.querySelector('.success-message');
-const errorMessage = document.querySelector('.error-message')
+const errorMessage = document.querySelector('.error-message');
 const openModal = document.querySelector('.add-book-mobile');
 const modal = document.querySelector('.form-container');
-const overlay = document.querySelector('.overlay');
 const closeModal = document.querySelector('.close-modal');
 let newId = 0;
 
 // class constructor of the book object
 class Book {
-  constructor(title, author,pages, status, id) {
+  constructor(title, author, pages, status, id) {
     this.author = author;
     this.title = title;
     this.pages = pages;
@@ -61,7 +55,7 @@ class UI {
 
   static addBooktoLibrary(newBook) {
     newBook.id = newId;
-    if(newBook.status) {
+    if (newBook.status) {
       const html = `
     <div class="book-wrapper" id ="${newBook.id}">
       <p id="info-book" class="book-title">${newBook.title}</p>
@@ -74,9 +68,9 @@ class UI {
       <div class="line-bottom"></div>
     </div>
   `;
-    libraryContainer.innerHTML += html;
-    newId += 1;
-    } if(newBook.status === false) {
+      libraryContainer.innerHTML += html;
+      newId += 1;
+    } if (newBook.status === false) {
       const html = `
     <div class="book-wrapper" id ="${newBook.id}">
       <p id="info-book" class="book-title">${newBook.title}</p>
@@ -91,10 +85,9 @@ class UI {
       <div class="line-bottom"></div>
     </div>
   `;
-    libraryContainer.innerHTML += html;
-    newId += 1;
+      libraryContainer.innerHTML += html;
+      newId += 1;
     }
-    
   }
 
   static clearFields() {
@@ -107,6 +100,7 @@ class UI {
     successMessage.style.display = 'flex';
     setTimeout(() => successMessage.remove(), 2000);
   }
+
   static errorMsg() {
     errorMessage.style.display = 'flex';
     setTimeout(() => errorMessage.remove(), 2000);
@@ -125,43 +119,40 @@ const addBookPressed = function (e) {
   } else {
     newId = books[len - 1].id + 1;
   }
-  if (newTitle && newAuthor && newPages ) {
-    if (checkbox.checked){
-      const newBook = new Book(newTitle, newAuthor, newPages, true,newId); //
+  if (newTitle && newAuthor && newPages) {
+    if (checkbox.checked) {
+      const newBook = new Book(newTitle, newAuthor, newPages, true, newId); //
       UI.successMsg();
       Storage.addBook(newBook);
-    UI.addBooktoLibrary(newBook);
-    UI.clearFields();
-      
+      UI.addBooktoLibrary(newBook);
+      UI.clearFields();
     } else {
       const newBook = new Book(newTitle, newAuthor, newPages, false, newId); //
       Storage.addBook(newBook);
       UI.successMsg();
-    UI.addBooktoLibrary(newBook);
-    UI.clearFields();
-    
-    } 
-  
+      UI.addBooktoLibrary(newBook);
+      UI.clearFields();
+    }
   } else {
     UI.errorMsg();
   }
 };
 
-const openModalF = function() {
+const openModalF = function () {
   modal.style.display = 'flex';
-  modal.style.position = "fixed";
-  modal.style.width = "100%";
-  modal.style.height = "100%";
-  modal.style.backgroundColor = "white"
-  modal.style.left = "0"
-  modal.style.padding = "0"
-  openModal.style.display = "none"
-}
+  modal.style.position = 'fixed';
+  modal.style.width = '100%';
+  modal.style.height = '100%';
+  modal.style.backgroundColor = 'white';
+  modal.style.left = '0';
+  modal.style.padding = '0';
+  openModal.style.display = 'none';
+};
 
-const closeModalF = function() {
-  modal.style.display = "none";
-  openModal.style.display = "block"
-}
+const closeModalF = function () {
+  modal.style.display = 'none';
+  openModal.style.display = 'block';
+};
 // Function to remove new Book
 const removeBook = function (e) {
   if (e.target.classList.contains('remove-btn')) {
@@ -172,9 +163,9 @@ const removeBook = function (e) {
     e.target.parentElement.remove();
   }
 };
-///// EVENT LISTENERS
+/// // EVENT LISTENERS
 addBtn.addEventListener('click', addBookPressed);
 libraryContainer.addEventListener('click', removeBook);
 document.addEventListener('DOMContentLoaded', UI.displayBook);
 openModal.addEventListener('click', openModalF);
-closeModal.addEventListener('click',closeModalF)
+closeModal.addEventListener('click', closeModalF);

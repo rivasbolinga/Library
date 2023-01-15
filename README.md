@@ -8,11 +8,11 @@
 # 📖 [Library - BOOK LIST] <a name="about-project"></a>
 
 
-**[Library - Book List]** is a small library app where you can record a loist of books that you have read or you want to read. 
+**[Library - Book List]** is a small library app where you can record a list of books that you have read or you want to read. 
 
-<img src="./img/mobile-v-library.png" alt="screenshot" width="240"  height="auto">
+<img src="./img/mobile-v-library.png" alt="screenshot" width="450"  height="auto">
 
-<img src="./img/img/Screenshot 2023-01-15 at 11.50.31.png" width="640"  height="auto">
+<img src="./img/Screenshot 2023-01-15 at 11.50.31.png" width="840"  height="auto">
 
 ## Requierements ##
 
