@@ -55,6 +55,6 @@
 
 > Cooming soon;
 
-- [ ] **[Books saved in Icloud]**
-- [ ] **[Next pages to save lots of books!!]**
+- [ ] **Books saved in Icloud**
+- [ ] **Next pages to save lots of books!!**
 
