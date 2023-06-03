@@ -8,8 +8,8 @@
 # 📖 Library - BOOK LIST <a name="about-project"></a>
 
 
-**Library - Book List** is a small library app where you can record a list of books that you have read or you want to read. 
-</div>
+**Library - Book List** is an intuitive and user-friendly platform designed for book lovers to keep track of their favorite books. 
+  
 <img src="./img/mobile-v-library.png" alt="screenshot" width="650"  height="auto">
 
 <img src="./img/Screenshot 2023-01-15 at 11.50.31.png" width="740"  height="auto">
