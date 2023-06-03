@@ -13,7 +13,7 @@
 <img src="./img/mobile-v-library.png" alt="screenshot" width="650"  height="auto">
 
 <img src="./img/Screenshot 2023-01-15 at 11.50.31.png" width="740"  height="auto">
-
+</ div>
 ## Requierements ##
 
 -Project from The Odin Projec's curriculum. 
@@ -53,7 +53,6 @@
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Cooming soon;
 
 - [ ] **Books saved in Icloud**
 - [ ] **Next pages to save lots of books!!**
