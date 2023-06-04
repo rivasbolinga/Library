@@ -14,7 +14,7 @@
 
 <img src="./img/Screenshot 2023-01-15 at 11.50.31.png" width="740"  height="auto">
   
-</ div>
+</div>
 
 ## Requierements ##
 
