@@ -46,6 +46,9 @@
 
 - [Live Demo Link](https://rivasbolinga.github.io/Library/)
 
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
 
 👤 **Andrea Rivas Palacios**
 
@@ -58,4 +61,30 @@
 
 - [ ] **Books saved in Icloud**
 - [ ] **Next pages to save lots of books!!**
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [Issues](https://github.com/rivasbolinga/Library).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, please don't forget to follow us and give it a star.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
