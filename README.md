@@ -11,6 +11,7 @@
 
 
  An intuitive and user-friendly platform designed for book lovers to keep track of their favorite books. 
+ With responsive design, the website offers a seamless experience across devices. "Your Awesome Library" is the go-to platform for book lovers to manage and explore their reading interests effectively.
   
   
 </div>
