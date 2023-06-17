@@ -1,14 +1,16 @@
 
 <div align="center">
-  <img src="./img/cf929df3b4640fa9e3893c370d8448cf0ffe7fbf.jpg" alt="logo" width="140"  height="auto"  />
+  
+ ![Minimalist Neutral Multi Device Computer Mockup Website Launch Instagram Post (1)](https://github.com/rivasbolinga/Library/assets/103900838/6f592465-c10d-41bc-9f03-d1271eebce60)
+
   <br/>
 
 
 
-# 📖 Library - BOOK LIST <a name="about-project"></a>
+# 📖 YOUR AWESOME LIBRARY <a name="about-project"></a>
 
 
-**Library - Book List** is an intuitive and user-friendly platform designed for book lovers to keep track of their favorite books. 
+ An intuitive and user-friendly platform designed for book lovers to keep track of their favorite books. 
   
 <img src="./img/mobile-v-library.png" alt="screenshot" width="650"  height="auto">
 
