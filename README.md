@@ -16,15 +16,15 @@
   
 </div>
 
-## Requierements ##
+## Requirements ##
 
 -Project from The Odin Projec's curriculum. 
   <br/>-Main Requierements:
   1. Write a function that loops through the array and displays each book on the page. 
-  2. Add a “NEW BOOK” button that brings up a form allowing users to input the details for the new book: author, title, number of pages, whether it’s been read and anything else you might want.
+  2. Add a “NEW BOOK” button that brings up a form allowing users to input the details for the new book: author, title, number of pages, whether it’s been read, and anything else you might want.
   3. Add a button on each book’s display to remove the book from the library.
   4. Add a button on each book’s display to change its read status
-*Note: Local storage was not requiered in this project but I implemented to practice and learn about it.
+*Note: Local storage was not required in this project but I implemented to practice and learn about it.
 
 ## 🛠 Built With <a name="built-with"></a>
 
